@@ -7,49 +7,60 @@ using GameCardLib;
 
 namespace BlackJackLib
 {
-    public delegate void BlackJackHandler();
     public class TableHandler
     {
+        public delegate void CardDelegate(Card card, IPlayer player, Boolean win);
+        private CardDelegate dDelegate;
         private Dealer dealer;
         private Player player;
         private Deck deck;
 
         public TableHandler()
         {
-
-        }
-
-
-        public void makeMove()
-        {
-
-
-        }
-
-        public void newGame()
-        {
             deck = new Deck();
-            deck.shuffle();
-            player = new Player();
-            dealer = new Dealer(deck, player);
+            
+        }
 
+
+        public void hit()
+        {
+          player.addCard(deck.drawCard());
+          if(player.countValue() > 21)
+            {
+                dDelegate(null, dealer, true);
+            }
+        }
+
+        public void stand()
+        {
+           dealer.addCard(deck.drawCard());
+            if (dealer.countValue() > 21)
+            {
+                dDelegate(null, player, true);
+            } else if (dealer.countValue() >= player.countValue())
+            {
+                dDelegate(null, dealer, true);
+            }
+            else
+            {
+                stand();
+            }
+        }
+
+        public void newGame(TableHandler.CardDelegate dDelegate)
+        {
+            this.dDelegate = dDelegate;
+            player = new Player(dDelegate);
+            dealer = new Dealer(dDelegate);
             player.addCard(deck.drawCard());
             dealer.addCard(deck.drawCard());
             player.addCard(deck.drawCard());
+
         }
 
-
-        public List<Card> playerCards()
+        public void shuffle()
         {
-            return player.getCards();
+            deck.shuffle();
         }
-
-        public List<Card> dealerCards()
-        {
-            return dealer.getCards();
-        }
-
-        
-
     }
 }

@@ -7,18 +7,22 @@ using GameCardLib;
 
 namespace BlackJackLib
 {
-    class Player
+    public class Player : IPlayer
     {
+        private TableHandler.CardDelegate dDelegate;
         private List<Card> cards;
 
-        public Player()
+        public Player(TableHandler.CardDelegate dDelegate)
         {
+            this.dDelegate = dDelegate;
             cards = new List<Card>();
         }
     
         public void addCard(Card card)
         {
+            
             cards.Add(card);
+            dDelegate(card, this, false);
         }
 
         public void reset()
@@ -26,13 +30,28 @@ namespace BlackJackLib
             cards.Clear();
         }
 
-        public Boolean checkWin()
+        public int countValue()
         {
-            return false;
+            int values = 0;
+            List<Card> aces = new List<Card>();
+            foreach (Card card in cards)
+            {
+                if ((int)card.CardValue != 1)
+                {
+                    values += (int)card.CardValue >= 10 ? 10 : (int)card.CardValue;
+                }
+                else
+                {
+                    aces.Add(card);
+                }
+            }
+            foreach (Card card in aces)
+            {
+                values += values >= 11 ? 1 : 11;
+            }
+
+            return values;
         }
-        public List<Card> getCards()
-        {
-            return cards;
-        }
+        public List<Card> getCards => cards;
     }
 }

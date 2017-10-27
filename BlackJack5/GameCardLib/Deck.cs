@@ -14,7 +14,7 @@ namespace GameCardLib
         {
             rng = new Random();
             cards = new List<Card>();
-            reset();
+            shuffle();
         }
         public void reset()
         {
@@ -56,6 +56,10 @@ namespace GameCardLib
 
         public Card drawCard()
         {
+            if(cards.Count == 0)
+            {
+                shuffle();
+            }
             Card card = cards[0];
             cards.RemoveAt(0);
             return card;

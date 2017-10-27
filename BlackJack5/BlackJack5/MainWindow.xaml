@@ -5,17 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackJack5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080">
+        Title="MainWindow" Height="720" Width="1080" Top="0" Left="0">
     <Window.Resources>
         <BitmapImage x:Key="SpriteImage" UriSource="images/cards.png"/>
     </Window.Resources>
     <Grid Background="#FF0E8D01">
         <Image Source="images/Cardback.png" Margin="862,50,50,412"/>
-        <Button x:Name="btnStand" Content="STAND" HorizontalAlignment="Left" Margin="415,621,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="btnStand_Click"/>
-        <Button x:Name="btnHit" Content="HIT" HorizontalAlignment="Left" Margin="618,621,0,0" VerticalAlignment="Top" Width="122" Height="41" Click="btnHit_Click"/>
+        <Button x:Name="btnStand" Content="STAND" HorizontalAlignment="Left" Margin="415,621,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="btnStand_Click" IsEnabled="False"/>
+        <Button x:Name="btnHit" Content="HIT" HorizontalAlignment="Left" Margin="618,621,0,0" VerticalAlignment="Top" Width="122" Height="41" Click="btnHit_Click" IsEnabled="False"/>
         <Button x:Name="btnNewGame" Content="NEW GAME" HorizontalAlignment="Left" Margin="31,621,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="btnNewGame_Click"/>
         <Image x:Name="PlayerCard1" Margin="415,351,497,111"/>
         <Image x:Name="PlayerCard2" Margin="445,351,467,111"/>
+        <Image x:Name="PlayerCard3" Margin="475,351,437,111"/>
+        <Image x:Name="PlayerCard4" Margin="505,351,407,111"/>
+        <Image x:Name="PlayerCard5" Margin="535,351,377,111"/>
+        <Image x:Name="PlayerCard6" Margin="565,351,347,111"/>
+        <Image x:Name="PlayerCard7" Margin="595,351,317,111"/>
+        <Image x:Name="PlayerCard8" Margin="625,351,287,111"/>
         <Image x:Name="DealerCard1"  Margin="415,50,497,412"/>
+        <Image x:Name="DealerCard2"  Margin="445,50,467,412"/>
+        <Image x:Name="DealerCard3" Margin="475,50,437,412"/>
+        <Image x:Name="DealerCard4" Margin="505,50,407,412"/>
+        <Image x:Name="DealerCard5" Margin="535,50,377,412"/>
+        <Image x:Name="DealerCard6" Margin="565,50,347,412"/>
+        <Image x:Name="DealerCard7" Margin="595,50,317,412"/>
+        <Image x:Name="DealerCard8" Margin="625,50,287,412"/>
+        <Button x:Name="btnShuffle" Content="SHUFFLE" HorizontalAlignment="Left" Margin="31,553,0,0" VerticalAlignment="Top" Width="123" Height="41" Click="btnShuffle_Click"/>
+        <Label x:Name="lblPlayerCount" Content="Player Count : 0" HorizontalAlignment="Left" Margin="517,578,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.934,0.173" Foreground="White" FontSize="20"/>
+        <Label x:Name="lblDealerCount" Content="Dealer Count : 0" HorizontalAlignment="Left" Margin="517,282,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.934,0.173" Foreground="White" FontSize="20" />
     </Grid>
 </Window>

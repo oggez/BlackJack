@@ -14,3 +14,11 @@ C:\Users\Amar\source\repos\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJack
 C:\Users\Amar\source\repos\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.csproj.CoreCompileInputs.cache
 C:\Users\Amar\source\repos\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.dll
 C:\Users\Amar\source\repos\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.pdb
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\bin\Debug\BlackJackLib.dll
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\bin\Debug\BlackJackLib.pdb
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\bin\Debug\GameCardLib.dll
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\bin\Debug\GameCardLib.pdb
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.csprojResolveAssemblyReference.cache
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.csproj.CoreCompileInputs.cache
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.dll
+C:\Users\oskar\Documents\GitHub\BlackJack\BlackJack5\BlackJackLib\obj\Debug\BlackJackLib.pdb
