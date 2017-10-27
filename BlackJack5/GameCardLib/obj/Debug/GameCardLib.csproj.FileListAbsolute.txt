@@ -4,3 +4,9 @@ C:\Users\oskar\source\repos\BlackJack5\GameCardLib\obj\Debug\GameCardLib.csprojR
 C:\Users\oskar\source\repos\BlackJack5\GameCardLib\obj\Debug\GameCardLib.csproj.CoreCompileInputs.cache
 C:\Users\oskar\source\repos\BlackJack5\GameCardLib\obj\Debug\GameCardLib.dll
 C:\Users\oskar\source\repos\BlackJack5\GameCardLib\obj\Debug\GameCardLib.pdb
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\bin\Debug\GameCardLib.dll
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\bin\Debug\GameCardLib.pdb
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\obj\Debug\GameCardLib.csprojResolveAssemblyReference.cache
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\obj\Debug\GameCardLib.csproj.CoreCompileInputs.cache
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\obj\Debug\GameCardLib.dll
+C:\Users\Amar\source\repos\BlackJack\BlackJack5\GameCardLib\obj\Debug\GameCardLib.pdb
